@@ -1,11 +1,23 @@
 package uz.dataunion.datashop.screens
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import uz.dataunion.datashop.utils.ScreenID
+import uz.dataunion.datashop.utils.ScreensList
 
 var mainScreenState = mutableStateOf(ScreenID.HomeScreen)
 
@@ -15,6 +27,32 @@ fun MainScreen(
     navigator: DestinationsNavigator? = null
 ) {
 
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color.White)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize(),
+            contentAlignment = Alignment.BottomCenter
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .shadow(
+                        elevation = 1.dp,
+                        spotColor = Color.Red
+                    ),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                for (item in ScreensList){
+
+                }
+            }
+        }
+
+    }
 
 }
 
