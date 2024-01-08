@@ -14,7 +14,7 @@ var ScreensList = listOf(
     BottomNav(
         id = ScreenID.HomeScreen,
         route = "home",
-        icon = R.drawable.ic_launcher_foreground,
+        icon = R.drawable.ic_home,
         title = R.string.str_home,
     ),
     BottomNav(

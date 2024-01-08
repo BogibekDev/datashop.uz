@@ -2,6 +2,6 @@
     <string name="app_name">Datashop</string>
     <string name="str_home">Home</string>
     <string name="str_favorite">Favorite</string>
-    <string name="str_shopping_cart">Shopping cart</string>
+    <string name="str_shopping_cart">Cart</string>
     <string name="str_profile">Profile</string>
 </resources>

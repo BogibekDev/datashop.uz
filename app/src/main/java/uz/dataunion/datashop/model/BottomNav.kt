@@ -3,8 +3,8 @@ package uz.dataunion.datashop.model
 import uz.dataunion.datashop.utils.ScreenID
 
 data class BottomNav(
-    var id: ScreenID,
-    var route: String,
-    var icon: Int,
-    var title: Int
+    val id: ScreenID,
+    val route: String,
+    val icon: Int,
+    val title: Int,
 )
