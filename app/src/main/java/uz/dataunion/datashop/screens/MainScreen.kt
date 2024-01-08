@@ -48,7 +48,7 @@ fun MainScreen(
                     .fillMaxWidth()
                     .shadow(
                         elevation = 1.dp,
-                        //spotColor = Color.Red
+                        spotColor = Color.Red
                     )
                     .background(color = Color.Red),
                 horizontalArrangement = Arrangement.SpaceEvenly,
