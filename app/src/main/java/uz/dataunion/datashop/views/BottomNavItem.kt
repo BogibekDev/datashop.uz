@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import uz.dataunion.datashop.R
 import uz.dataunion.datashop.model.BottomNav
+import uz.dataunion.datashop.ui.theme.MyWhite
 import uz.dataunion.datashop.utils.ScreenID
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -80,7 +81,7 @@ fun BottomNavItem(
                     .size(24.dp),
                 painter = painterResource(id = item.icon),
                 contentDescription = null,
-                tint = Color.White
+                tint = MyWhite
             )
         }
 

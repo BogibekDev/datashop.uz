@@ -8,6 +8,7 @@ fun Long.moneyType(): String {
 }
 
 fun String.moneyType(): String {
+    //1000000 -> 1 000 000 so'm
     return this
         .reversed()
         .chunked(3)
